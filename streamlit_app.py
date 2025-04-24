@@ -20,9 +20,9 @@ renewal_date = pd.to_datetime(renewal_date)
 renewal_date = st.date_input(
     "📅 Enter Renewal or Effective Date", 
     value=datetime.today(),
-    key="renewal_date_input"
+    key="renewal_date_main"  # changed key to avoid duplication
 )
-renewal_date = pd.to_datetime(renewal_date)
+
 
 # Step 2: Employer contribution logic (dynamic UI)
 st.subheader("🏥 Employer Medical Contribution Setup")
